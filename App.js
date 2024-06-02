@@ -8,12 +8,10 @@ import { NavigationContainer } from '@react-navigation/native';
 export default function App() {
 
     return (
-  
-      <View className="flex-1 bg-white">
-          <TelaLogin/>
-      </View>
-      
+        <NavigationContainer>
+            <TabNavigation/>
 
+        </NavigationContainer>
     );
   }
 
