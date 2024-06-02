@@ -1,17 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import TelaLogin from './Apps/Screens/TelaLogin';
-import { ClerkProvider}from'@clerk/clerk-expo';
+import TabNavigation from './Apps/Navegações/TabNavigation';
+import { NavigationContainer } from '@react-navigation/native';
 
 
 export default function App() {
 
     return (
-      <ClerkProvider>
+  
       <View className="flex-1 bg-white">
-          <TelaLogin/>    
+          <TelaLogin/>
       </View>
-      </ClerkProvider>
+      
 
     );
   }
