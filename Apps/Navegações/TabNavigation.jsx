@@ -10,7 +10,9 @@ const Tab = createBottomTabNavigator();
 
 export default function TabNavigation() {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator screenOptions={{
+        headerShown:false
+    }}>
         <Tab.Screen name= 'home' component={TelaInicial}/>
         <Tab.Screen name= 'explore' component={ExploreTelas}/>
         <Tab.Screen name= 'addpost' component={AddTelaPostagem}/>
