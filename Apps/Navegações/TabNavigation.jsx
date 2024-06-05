@@ -15,7 +15,7 @@ export default function TabNavigation() {
   return (
     <Tab.Navigator screenOptions={{
         headerShown:false,
-        tabBarActiveTintColor:'#06f91e'
+        tabBarActiveTintColor:'rgb(29, 241, 9)'
     }}>
         <Tab.Screen name= 'home' component={TelaInicial}
         options={{
